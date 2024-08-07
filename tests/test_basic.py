@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from .context import sample
-
 import unittest
+
+from .context import sample
 
 
 class BasicTestSuite(unittest.TestCase):
@@ -12,5 +12,5 @@ class BasicTestSuite(unittest.TestCase):
         assert True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
