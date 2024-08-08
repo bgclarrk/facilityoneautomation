@@ -2,13 +2,12 @@
 
 import unittest
 
-from .context import sample
-
 
 class BasicTestSuite(unittest.TestCase):
     """Basic test cases."""
 
     def test_absolute_truth_and_meaning(self):
+        """Sample basic test"""
         assert True
 
 

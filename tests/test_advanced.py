@@ -14,10 +14,16 @@ from .context import sample
 class AdvancedTestSuite(unittest.TestCase):
     """Advanced test cases."""
 
+    def setup(self):
+        """initialize webdriver"""
+        self.driver = webdriver.chrome()
+
     def test_thoughts(self):
+        """sample test"""
         self.assertIsNone(sample.hmm())
 
-    def test_selenium():
+    def test_selenium_website(self):
+        """testing website"""
         driver = webdriver.chrome()
         driver.get("https://www.selenium.dev/")
         assert driver.title == "Selenium"
